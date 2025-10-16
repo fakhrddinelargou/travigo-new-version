@@ -304,6 +304,26 @@ footer .copyright{
       color: var(--paragraph-color);
 }
 
+.hidden{
+    display: none;
+}
+.menu{
+    position: absolute;
+    right:  1.5rem;
+    top: .5rem;
+width: 5rem;
+height: 5rem;
+position: relative;
+display: none;
+z-index: 99999;
+}
+.menu div{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4rem;
+    height: 4rem;
+}
 
 
 @media (max-width: 1400px){
@@ -321,7 +341,31 @@ footer .copyright{
 }
 @media (max-width: 992px){
     .navbar  {
-    display: none;
+
+     background: white;
+     box-shadow: 0 0 .5rem .2rem rgba(36, 36, 36, 0.212);  
+     width: 30rem;
+     height: 100%;
+     position: fixed;
+     right: 0;
+     top: 0;
+     right: -30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all;
+    z-index: 99999;
+    /* font-size: rem !important; */
+}
+.active{
+         right: 0;
+}
+.menu{
+    display: block;
+}
+.navbar .links{
+    flex-direction: column;
+    gap:5rem;
 }
 .head {
 
