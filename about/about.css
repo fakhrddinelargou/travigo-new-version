@@ -225,6 +225,7 @@ font-weight: 500;
     .AllCards{
         gap: 1rem;
         justify-content: center;
+        /* background: #000; */
     }
     
     .tom:nth-child(2){
@@ -271,9 +272,20 @@ height: auto;
    
 }
 .AllCards .container-cmnts .profile{
+   width: 5rem;
+}
+
+.AllCards{
+
+    width: 100%;
+
+}
+
+.AllCards .container-cmnts .profile{
     position: absolute;
     left: -3.5rem;
     top: -3.5rem;
+    
 }
 }
 @media (max-width: 360px){

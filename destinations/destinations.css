@@ -42,13 +42,16 @@
 }
 
 .mar-place {
+ 
     max-width: 90%;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 5.6rem;
+
 }
 
 .mar-place .place {
@@ -63,7 +66,7 @@
 .mar-place .place .bg-img {
     position: relative;
     width: 45rem;
-    max-width: 90%;
+
     height: 67.3rem;
     display: flex;
     align-items: end;
@@ -79,6 +82,7 @@
 .mar-place .place div img {
     position: absolute;
     z-index: -1;
+    width: 100%;
 
 }
 
@@ -97,7 +101,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 3rem; */
 }
 
 .td h2 {
@@ -186,6 +189,7 @@
 
 .book h2 {
     width: 60%;
+    max-width: 95%;
     padding-bottom: 3.1rem;
 
 }
@@ -299,9 +303,7 @@
 
 @media (max-width: 480px) {
     .mar-place .place div img {
-        position: absolute;
-        z-index: -1;
-        width: 40rem;
+        width: 100%;
     }
 
     .card-position {
@@ -322,6 +324,39 @@
     width: 30rem;
 
 }
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book .opts {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+
+max-width: 90%;
+}
+.mar-place .place {
+   width: 100%;
+
+    
+}
+
+.mar-place .place .bg-img {
+   
+    width: 100%;
+
+}
+.card-2 {
+
+   padding-right: 3rem;
+}
+
+
+h2{
+    font-size: 4rem !important;
+  text-align: center;
+}
 }
 
 @media (max-width: 360px) {
@@ -337,7 +372,7 @@
         flex-direction: column;
         align-items: center;
         gap: 10rem;
-        background: #868686;
+        
         margin: auto;
     }
 }
